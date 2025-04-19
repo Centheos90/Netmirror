@@ -16,7 +16,7 @@ const AppProvider = ({ children }) => {
     try {
       const res = await fetch(url);
       const data = await res.json();
-    //   console.log(`This is coming from Context`, data);
+      console.log(`This is coming from Context`, data);
 
       if (data.Response === "True") {
         setIsLoading(false);
