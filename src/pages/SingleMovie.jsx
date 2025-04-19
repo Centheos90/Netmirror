@@ -10,7 +10,7 @@ function SingleMovie() {
   const [movie, setMovie] = useState({});
   const [error, setError] = useState("");
 
-  const API = `http://www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}&i=${id}`;
+  const API = `https://www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}&i=${id}`;
 
   const fetchMovie = async () => {
     try {
